@@ -11,6 +11,10 @@ var sessionController = require('../controllers/session_controller');
 router.get('/', function(req, res, next) {
   res.render('index');
 });
+router.get('/creditos', function(req, res, next) {
+  res.render('creditos/author',{title:'Autor'});
+});
+
 
 
 // Autoload de parametros
